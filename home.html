@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Bright Begins</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <style>
+    .pare{
+      margin-top: 10%;
+    }
+
+    </style>
+</head>
+    <body>
+      <div class="container pare">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+      <div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Name:</span>
+  </div>
+  <input type="textfield" class="form-control"  id="latest" placeholder="Enter Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div><br>
+<div class="input-group input-group-lg">
+<div class="input-group-prepend">
+<span class="input-group-text" id="inputGroup-sizing-lg">Phone Number:</span>
+</div>
+<input type="textfield" class="form-control"  id="phone" placeholder="Enter Phone Number" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div><br>
+<center>
+<button type="button" id="savebutton" class="btn btn-primary btn-lg">Submit</button>
+</center>
+      </div>
+        <div class="col-1"></div>
+    </div><br>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+    <h3 id="hotDogOutput"></h3><br>
+    <h3 id="phoneoutput"></h3>
+  </div>
+
+  </div>
+</div>
+<script src="js/app.js"></script>
+    </body>
+</html>
