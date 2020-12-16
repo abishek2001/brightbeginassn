@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>Bright Begins</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <style>
+      body{
+background-color:black;
+      }
+      .container{
+        margin-top:3%;
+          margin-bottom:3%;
+          background-color:#ccffff;
+          border-radius:4px;
+      }
+      .headd{
+        padding-top:1%;
+      }
+      .form-group{
+        color:black;
+      }
+      .textaa{
+        padding-bottom:1%;
+      }
+      .btt{
+        margin-left:45%;
+        padding-left:2%;
+        padding-right:2%;
+      }
+      </style>
+</head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">Bright Begins</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="./home.html">Home</a>
+      <a class="nav-item nav-link active" href="./newleadsform.html">Create New Leads <span class="sr-only">(current)</span></a>
+
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h2 class="headd"><u>New Leads Form</u></h2><br>
+  <form id="nlform">
+    <div class="form-group">
+      <label for="name"><b>Name</b></label>
+      <input type="text" class="form-control" id="name" placeholder="Enter New Lead's name">
+    </div>
+    <div class="form-group">
+      <label for="Phone"><b>Phone</b></label>
+      <input type="text" class="form-control" id="Phone" placeholder="Enter New Lead's Phone">
+    </div>
+  <div class="form-group">
+    <label for="email"><b>Email address</b></label>
+    <input type="email" class="form-control" id="email" placeholder="Enter New Lead's E-mail">
+  </div>
+  <div class="form-group">
+    <label for="courses"><b>Select the Course</b></label>
+    <select class="form-control" id="courses">
+      <option>course1</option>
+      <option>course2</option>
+      <option>course3</option>
+      <option>course4</option>
+      <option>course5</option>
+    </select>
+  </div>
+  <div class="form-group textaa">
+    <label for="pname"><b>Primary Agent Name</b></label>
+    <input type="text" class="form-control" id="pname" placeholder="Enter Primary Agent's name">
+  </div>
+ <button type="button" id="savebutton" class="btn btn-danger mb-2 btt">Submit</button>
+</form>
+  </div>
+
+
+
+
+
+
+
+
+      <script src="js/newleadsform.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+          </body>
+      </html>
