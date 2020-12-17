@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
     <style>
       body{
 background-color:black;
@@ -36,17 +37,26 @@ background-color:black;
       </style>
 </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#">Bright Begins</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Bright Begins</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="./home.html">Home</a>
-      <a class="nav-item nav-link active" href="./newleadsform.html">Create New Leads <span class="sr-only">(current)</span></a>
-
-    </div>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="./home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link active" href="#">Create New Leads  <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Logged in as <b><span id="username"></b>
+    </span>
+    <span class=" nav-item nav-link ">
+      <a class="nav-item nav-link" href="#" onclick="logout();">Logout</a>
+    </span>
   </div>
 </nav>
 <div class="container">
@@ -89,8 +99,14 @@ background-color:black;
 
 
 
-      <script src="js/newleadsform.js"></script>
+      <script src="js/newlead.js"></script>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
           </body>
       </html>
+
+
+
+
+
+      
